@@ -1,4 +1,9 @@
 import "./style.css";
+import slide from './assets/slide.jpg'
+import slide2 from './assets/slide2.jpg'
+import slide3 from './assets/slide3.jpg'
+import slide4 from './assets/slide4.jpg'
+
 
 // Get references to navigation buttons and main content container
 const menuButton = document.getElementById("menu");
@@ -325,16 +330,16 @@ function renderAbout() {
         <div class="carousel-container">
           <div class="carousel">
             <div class="carousel-item">
-              <img src="slide.jpg" alt="YUMMS interior" />
+              <img src="${slide}" alt="YUMMS interior" />
             </div>
             <div class="carousel-item">
-              <img src="slide2.jpg" alt="YUMMS interior" />
+              <img src="${slide2}" alt="YUMMS interior" />
             </div>
             <div class="carousel-item">
-              <img src="slide3.jpg" alt="YUMMS interior" />
+              <img src="${slide3}" alt="YUMMS interior" />
             </div>
             <div class="carousel-item">
-              <img src="slide4.jpg" alt="YUMMS interior" />
+              <img src="${slide4}" alt="YUMMS interior" />
             </div>
           </div>
         </div>
@@ -359,10 +364,8 @@ function renderContact() {
   </div>
   
   <div class="info-actions">
-    <img class src="slide4.jpg" alt="YUMMS interior" />
-
+    <img src="${slide4}" alt="YUMMS interior" />
   </div>
-  
   
   <div class="info-contacts">
     <p>Email: <a href="mailto:yumms.moscow@gmail.com">yumms.moscow@gmail.com</a></p>

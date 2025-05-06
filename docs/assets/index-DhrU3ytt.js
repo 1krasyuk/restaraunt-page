@@ -1,4 +1,4 @@
-(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const i of s)if(i.type==="childList")for(const d of i.addedNodes)d.tagName==="LINK"&&d.rel==="modulepreload"&&n(d)}).observe(document,{childList:!0,subtree:!0});function t(s){const i={};return s.integrity&&(i.integrity=s.integrity),s.referrerPolicy&&(i.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?i.credentials="include":s.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function n(s){if(s.ep)return;s.ep=!0;const i=t(s);fetch(s.href,i)}})();const L=document.getElementById("menu"),O=document.getElementById("about"),R=document.getElementById("contact"),l=document.getElementById("content");function m(){l.innerHTML=""}function f(){m();const e=document.createElement("div");e.innerHTML=`
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))n(s);new MutationObserver(s=>{for(const i of s)if(i.type==="childList")for(const d of i.addedNodes)d.tagName==="LINK"&&d.rel==="modulepreload"&&n(d)}).observe(document,{childList:!0,subtree:!0});function t(s){const i={};return s.integrity&&(i.integrity=s.integrity),s.referrerPolicy&&(i.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?i.credentials="include":s.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function n(s){if(s.ep)return;s.ep=!0;const i=t(s);fetch(s.href,i)}})();const O="/restaraunt-page/assets/slide-CktN6g87.jpg",R="/restaraunt-page/assets/slide2-C4c9Rihh.jpg",f="/restaraunt-page/assets/slide3-CpXXwo0w.jpg",C="/restaraunt-page/assets/slide4-k1CaxpQC.jpg",S=document.getElementById("menu"),T=document.getElementById("about"),N=document.getElementById("contact"),l=document.getElementById("content");function m(){l.innerHTML=""}function P(){m();const e=document.createElement("div");e.innerHTML=`
   <svg width="0" height="0" style="position: absolute">
   <defs>
     <clipPath id="myBlobShape" clipPathUnits="objectBoundingBox">
@@ -298,21 +298,21 @@
         <div class="carousel-container">
           <div class="carousel">
             <div class="carousel-item">
-              <img src="slide.jpg" alt="YUMMS interior" />
+              <img src="${O}" alt="YUMMS interior" />
             </div>
             <div class="carousel-item">
-              <img src="slide2.jpg" alt="YUMMS interior" />
+              <img src="${R}" alt="YUMMS interior" />
             </div>
             <div class="carousel-item">
-              <img src="slide3.jpg" alt="YUMMS interior" />
+              <img src="${f}" alt="YUMMS interior" />
             </div>
             <div class="carousel-item">
-              <img src="slide4.jpg" alt="YUMMS interior" />
+              <img src="${C}" alt="YUMMS interior" />
             </div>
           </div>
         </div>
       </div>
-  `,l.appendChild(e),M()}function S(){m();const e=document.createElement("div");e.innerHTML=`
+  `,l.appendChild(e),M()}function g(){m();const e=document.createElement("div");e.innerHTML=`
   <div class="info-container">
   <div class="info-header">
     <h2>YUMMS, Aviapark Mall, 4th floor, Mark Eat zone</h2>
@@ -323,14 +323,12 @@
   </div>
   
   <div class="info-actions">
-    <img class src="slide4.jpg" alt="YUMMS interior" />
-
+    <img src="${C}" alt="YUMMS interior" />
   </div>
-  
   
   <div class="info-contacts">
     <p>Email: <a href="mailto:yumms.moscow@gmail.com">yumms.moscow@gmail.com</a></p>
     <p>Instagram: <a href="https://instagram.com/yumms.moscow" target="_blank">@yumms.moscow</a></p>
   </div>
 </div>
-  `,l.appendChild(e)}L.addEventListener("click",f);O.addEventListener("click",I);R.addEventListener("click",S);function M(){const e=document.querySelector(".carousel"),r=Array.from(document.querySelectorAll(".carousel-item"));r.forEach(a=>{const c=a.cloneNode(!0);e.appendChild(c)}),document.querySelectorAll(".carousel-item");let t=0,n=!1,s=0,i=0,d=0,o;function v(){i=-t*100,e.style.transition="transform 0.5s ease-in-out",e.style.transform=`translateX(${i}%)`,setTimeout(()=>{t>=r.length&&(e.style.transition="none",t=0,i=0,e.style.transform="translateX(0%)",d=0)},500)}function C(){t++,v(),d=-t*100}function p(){o=setInterval(()=>{n||C()},3e3)}function u(a){n=!0,s=a.type.includes("touch")?a.touches[0].clientX:a.clientX,clearInterval(o),e.style.transition="none"}function E(a){if(!n)return;const h=(a.type.includes("touch")?a.touches[0].clientX:a.clientX)-s;i=d+h/e.offsetWidth*100,e.style.transform=`translateX(${i}%)`}function A(a){if(!n)return;n=!1,e.style.transition="transform 0.5s ease-in-out";const c=i-d;c<-20?t++:c>20&&t>0&&t--,v(),d=-t*100,p()}e.addEventListener("mousedown",u),e.addEventListener("mousemove",a=>{n&&E(a)}),window.addEventListener("mouseup",A),e.addEventListener("touchstart",u,{passive:!1}),e.addEventListener("touchmove",E,{passive:!1}),e.addEventListener("touchend",A),document.querySelectorAll(".carousel-item img").forEach(a=>{a.addEventListener("dragstart",c=>c.preventDefault())}),p()}document.addEventListener("DOMContentLoaded",M);I();
+  `,l.appendChild(e)}S.addEventListener("click",P);T.addEventListener("click",I);N.addEventListener("click",g);function M(){const e=document.querySelector(".carousel"),r=Array.from(document.querySelectorAll(".carousel-item"));r.forEach(a=>{const c=a.cloneNode(!0);e.appendChild(c)}),document.querySelectorAll(".carousel-item");let t=0,n=!1,s=0,i=0,d=0,o;function v(){i=-t*100,e.style.transition="transform 0.5s ease-in-out",e.style.transform=`translateX(${i}%)`,setTimeout(()=>{t>=r.length&&(e.style.transition="none",t=0,i=0,e.style.transform="translateX(0%)",d=0)},500)}function L(){t++,v(),d=-t*100}function p(){o=setInterval(()=>{n||L()},3e3)}function u(a){n=!0,s=a.type.includes("touch")?a.touches[0].clientX:a.clientX,clearInterval(o),e.style.transition="none"}function E(a){if(!n)return;const h=(a.type.includes("touch")?a.touches[0].clientX:a.clientX)-s;i=d+h/e.offsetWidth*100,e.style.transform=`translateX(${i}%)`}function A(a){if(!n)return;n=!1,e.style.transition="transform 0.5s ease-in-out";const c=i-d;c<-20?t++:c>20&&t>0&&t--,v(),d=-t*100,p()}e.addEventListener("mousedown",u),e.addEventListener("mousemove",a=>{n&&E(a)}),window.addEventListener("mouseup",A),e.addEventListener("touchstart",u,{passive:!1}),e.addEventListener("touchmove",E,{passive:!1}),e.addEventListener("touchend",A),document.querySelectorAll(".carousel-item img").forEach(a=>{a.addEventListener("dragstart",c=>c.preventDefault())}),p()}document.addEventListener("DOMContentLoaded",M);I();
