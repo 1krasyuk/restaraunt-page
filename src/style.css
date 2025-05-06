@@ -336,6 +336,7 @@ h3 {
 .info-actions img {
   width: 90%;
   height: 90%;
+  border-radius: 15px;
 }
 
 .info-contacts {
