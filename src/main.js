@@ -28,7 +28,6 @@ function renderMenu() {
   </defs>
 </svg>
 
-
 <div class="menu-container">
   <div class="menu-card-container">
     <div class="menu-title-section">
@@ -326,16 +325,16 @@ function renderAbout() {
         <div class="carousel-container">
           <div class="carousel">
             <div class="carousel-item">
-              <img src="src/assets/slide.jpg" alt="YUMMS interior" />
+              <img src="slide.jpg" alt="YUMMS interior" />
             </div>
             <div class="carousel-item">
-              <img src="src/assets/slide2.jpg" alt="YUMMS interior" />
+              <img src="slide2.jpg" alt="YUMMS interior" />
             </div>
             <div class="carousel-item">
-              <img src="src/assets/slide3.jpg" alt="YUMMS interior" />
+              <img src="slide3.jpg" alt="YUMMS interior" />
             </div>
             <div class="carousel-item">
-              <img src="src/assets/slide4.jpg" alt="YUMMS interior" />
+              <img src="slide4.jpg" alt="YUMMS interior" />
             </div>
           </div>
         </div>
@@ -360,7 +359,7 @@ function renderContact() {
   </div>
   
   <div class="info-actions">
-    <img class src="src/assets/slide4.jpg" alt="YUMMS interior" />
+    <img class src="slide4.jpg" alt="YUMMS interior" />
 
   </div>
   
