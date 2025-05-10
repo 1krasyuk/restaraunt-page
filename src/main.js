@@ -1,9 +1,11 @@
-import "./style.css";
-import slide from './assets/slide.jpg'
-import slide2 from './assets/slide2.jpg'
-import slide3 from './assets/slide3.jpg'
-import slide4 from './assets/slide4.jpg'
-
+import "./styles/default.css";
+import "./styles/about.css";
+import "./styles/menu.css";
+import "./styles/contacts.css";
+import slide from "./assets/slide.jpg";
+import slide2 from "./assets/slide2.jpg";
+import slide3 from "./assets/slide3.jpg";
+import slide4 from "./assets/slide4.jpg";
 
 // Get references to navigation buttons and main content container
 const menuButton = document.getElementById("menu");
@@ -15,8 +17,6 @@ const contentDiv = document.getElementById("content");
 function clearContent() {
   contentDiv.innerHTML = "";
 }
-
-
 
 // Render Menu
 function renderMenu() {
@@ -497,4 +497,3 @@ renderAbout();
 //   contentDiv.appendChild(defaultContent);
 // }
 // loadDefaultContent();
-
